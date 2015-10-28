@@ -11,7 +11,7 @@ $results=$results[0];
 //If an edit is performed
 if(! empty($_POST))
 {
-      $data=$_POST
+      $data=$_POST;
       
       $answer=$User->Update($data,array( "UserId" => $id ));
       header("Location: ./index.php");
