@@ -29,25 +29,6 @@ if(!empty($_POST))
 			<h2>Inscription au site</h2>
 <form class="form-horizontal" data-toggle="validator" role="form" method="post" >
 <fieldset>
-<?
-if(!empty($results) && isset($results))
-  {
-  	echo '<div class="alert alert-warning alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Warning!</strong> Better check yourself erreur
-</div>';
-  }
-  else
-  {
-  	$answer=$User->Insert($data);
-
-  	echo '<div class="alert alert-sucess alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Warning!</strong> Better check yourself
-</div>';
-  }
-
-?>
 <!-- Multiple Radios -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="Titre">Titre</label>

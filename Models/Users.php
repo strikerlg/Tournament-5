@@ -50,7 +50,8 @@ class UsersModel
 	public function Delete( $id)
 	{
 		$database=$this->database;
-		return $database->delete($this->name,$id);
+		 return  $database->delete($this->name,$id);
+		
 		
 	}
 	/**Remove**/
